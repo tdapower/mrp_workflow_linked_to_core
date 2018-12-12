@@ -1,0 +1,135 @@
+
+#w
+{
+	display: block;
+	width: 200px;
+	padding-top: 0px;
+}
+
+#content ul
+{
+	margin-bottom: 0em;
+	padding-left: 0em;
+	list-style: none;
+}
+
+
+/* nav menu styles */
+#nav
+{
+	display: block;
+	width: 168px;
+	margin: 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li
+{
+	list-style-type: none;
+}
+/*
+#nav > li > a
+{
+	display: block;
+	padding: 14px 10px;
+	font-size: 1.1em;
+	color: #d4d4d4;
+	text-decoration: none;
+	border-bottom: 1px solid #212121;
+	background-color: #343434;
+	background: -webkit-gradient(linear, left top, left bottom, from(#343434), to(#292929));
+	background: -webkit-linear-gradient(top, #343434, #292929);
+	background: -moz-linear-gradient(top, #343434, #292929);
+	background: -ms-linear-gradient(top, #343434, #292929);
+	background: -o-linear-gradient(top, #343434, #292929);
+	background: linear-gradient(top, #343434, #292929);
+	list-style-type: none;
+}*/
+
+#nav > li > a
+{
+	display: block;
+	padding: 5px 10px;
+	font-size: 1.1em;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-bottom: 1px solid #212121;
+	background-color: #4682b4;
+	list-style-type: none;
+}
+
+/*
+#nav > li > a:hover, #nav > li > a.open
+{
+	color: #e9e9e9;
+	border-bottom-color: #384f76;
+	background-color: #6985b5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6985b5), to(#456397));
+	background: -webkit-linear-gradient(top, #6985b5, #456397);
+	background: -moz-linear-gradient(top, #6985b5, #456397);
+	background: -ms-linear-gradient(top, #6985b5, #456397);
+	background: -o-linear-gradient(top, #6985b5, #456397);
+	background: linear-gradient(top, #6985b5, #456397);
+	list-style-type: none;
+}*/
+
+
+#nav > li > a:hover, #nav > li > a.open
+{
+	color: #e9e9e9;
+	border-bottom-color: #384f76;
+	background-color: #6eaadc;
+	list-style-type: none;
+}
+/*
+#nav li ul
+{
+	display: none;
+	background: #4a5b78;
+	padding-left: 0em;
+}
+
+#nav li ul li a
+{
+	display: block;
+	background: none;
+	padding: 10px 0px;
+	padding-left: 10px;
+	font-size: 0.9em;
+	text-decoration: none;
+	color: #e3e7f1;
+	text-shadow: 1px 1px 0px #000;
+	list-style-type: none;
+}
+#nav li ul li a:hover
+{
+	background: #394963;
+	list-style-type: none;
+}
+
+*/
+#nav li ul
+{
+	display: none;
+	background: #182B4C;
+	padding-left: 0em;
+}
+
+#nav li ul li a
+{
+	display: block;
+	background: none;
+	padding: 4px 0px;
+	padding-left: 10px;
+	font-size: 0.9em;
+	text-decoration: none;
+	color: #e3e7f1;
+	text-shadow: 1px 1px 0px #000;
+	list-style-type: none;
+}
+#nav li ul li a:hover
+{
+	background: #3A5584;
+	list-style-type: none;
+}

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="General_GWP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="General_GWPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="General_GWPResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SurPlusAmount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="policyno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SurPlusAmountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SurPlusAmountResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldDataSet">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataTableExpiry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataTableExpiryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataTableExpiryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataTablePPW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataTablePPWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataTablePPWResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataPendingDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataPendingDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataPendingDocumentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataEstimateSent">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDataEstimateSentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataEstimateSentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataEstimateReceive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataEstimateReceiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataEstimateReceiveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataClaimRemind">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataClaimRemindResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataClaimRemindResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClaimRemindSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="search" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClaimRemindSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClaimRemindSearchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="General_GWPSoapIn">
+    <wsdl:part name="parameters" element="tns:General_GWP" />
+  </wsdl:message>
+  <wsdl:message name="General_GWPSoapOut">
+    <wsdl:part name="parameters" element="tns:General_GWPResponse" />
+  </wsdl:message>
+  <wsdl:message name="SurPlusAmountSoapIn">
+    <wsdl:part name="parameters" element="tns:SurPlusAmount" />
+  </wsdl:message>
+  <wsdl:message name="SurPlusAmountSoapOut">
+    <wsdl:part name="parameters" element="tns:SurPlusAmountResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorldDataSet" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataTableExpirySoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataTableExpiry" />
+  </wsdl:message>
+  <wsdl:message name="GetDataTableExpirySoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataTableExpiryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataTablePPWSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataTablePPW" />
+  </wsdl:message>
+  <wsdl:message name="GetDataTablePPWSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataTablePPWResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataPendingDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataPendingDocument" />
+  </wsdl:message>
+  <wsdl:message name="GetDataPendingDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataPendingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataEstimateSentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataEstimateSent" />
+  </wsdl:message>
+  <wsdl:message name="GetDataEstimateSentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataEstimateSentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataEstimateReceiveSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataEstimateReceive" />
+  </wsdl:message>
+  <wsdl:message name="GetDataEstimateReceiveSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataEstimateReceiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataClaimRemindSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataClaimRemind" />
+  </wsdl:message>
+  <wsdl:message name="GetDataClaimRemindSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataClaimRemindResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClaimRemindSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClaimRemindSearch" />
+  </wsdl:message>
+  <wsdl:message name="GetClaimRemindSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClaimRemindSearchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="General_GWP">
+      <wsdl:input message="tns:General_GWPSoapIn" />
+      <wsdl:output message="tns:General_GWPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SurPlusAmount">
+      <wsdl:input message="tns:SurPlusAmountSoapIn" />
+      <wsdl:output message="tns:SurPlusAmountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorldDataSet">
+      <wsdl:input message="tns:HelloWorldDataSetSoapIn" />
+      <wsdl:output message="tns:HelloWorldDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTableExpiry">
+      <wsdl:input message="tns:GetDataTableExpirySoapIn" />
+      <wsdl:output message="tns:GetDataTableExpirySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTablePPW">
+      <wsdl:input message="tns:GetDataTablePPWSoapIn" />
+      <wsdl:output message="tns:GetDataTablePPWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPendingDocument">
+      <wsdl:input message="tns:GetDataPendingDocumentSoapIn" />
+      <wsdl:output message="tns:GetDataPendingDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataEstimateSent">
+      <wsdl:input message="tns:GetDataEstimateSentSoapIn" />
+      <wsdl:output message="tns:GetDataEstimateSentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataEstimateReceive">
+      <wsdl:input message="tns:GetDataEstimateReceiveSoapIn" />
+      <wsdl:output message="tns:GetDataEstimateReceiveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataClaimRemind">
+      <wsdl:input message="tns:GetDataClaimRemindSoapIn" />
+      <wsdl:output message="tns:GetDataClaimRemindSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClaimRemindSearch">
+      <wsdl:input message="tns:GetClaimRemindSearchSoapIn" />
+      <wsdl:output message="tns:GetClaimRemindSearchSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="General_GWP">
+      <soap:operation soapAction="http://tempuri.org/General_GWP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SurPlusAmount">
+      <soap:operation soapAction="http://tempuri.org/SurPlusAmount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorldDataSet">
+      <soap:operation soapAction="http://tempuri.org/HelloWorldDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTableExpiry">
+      <soap:operation soapAction="http://tempuri.org/GetDataTableExpiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTablePPW">
+      <soap:operation soapAction="http://tempuri.org/GetDataTablePPW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPendingDocument">
+      <soap:operation soapAction="http://tempuri.org/GetDataPendingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataEstimateSent">
+      <soap:operation soapAction="http://tempuri.org/GetDataEstimateSent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataEstimateReceive">
+      <soap:operation soapAction="http://tempuri.org/GetDataEstimateReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataClaimRemind">
+      <soap:operation soapAction="http://tempuri.org/GetDataClaimRemind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClaimRemindSearch">
+      <soap:operation soapAction="http://tempuri.org/GetClaimRemindSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="General_GWP">
+      <soap12:operation soapAction="http://tempuri.org/General_GWP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SurPlusAmount">
+      <soap12:operation soapAction="http://tempuri.org/SurPlusAmount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorldDataSet">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorldDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTableExpiry">
+      <soap12:operation soapAction="http://tempuri.org/GetDataTableExpiry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTablePPW">
+      <soap12:operation soapAction="http://tempuri.org/GetDataTablePPW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataPendingDocument">
+      <soap12:operation soapAction="http://tempuri.org/GetDataPendingDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataEstimateSent">
+      <soap12:operation soapAction="http://tempuri.org/GetDataEstimateSent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataEstimateReceive">
+      <soap12:operation soapAction="http://tempuri.org/GetDataEstimateReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataClaimRemind">
+      <soap12:operation soapAction="http://tempuri.org/GetDataClaimRemind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClaimRemindSearch">
+      <soap12:operation soapAction="http://tempuri.org/GetClaimRemindSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://192.168.10.13:82/IncomeDetails/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://192.168.10.13:82/IncomeDetails/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+﻿ .UpperCase
+ {
+ text-transform:uppercase;
+ }
+
+ .ProperCase
+{ 
+	text-transform:capitalize;
+}
+
+.alignright {
+	float: right;
+}
+

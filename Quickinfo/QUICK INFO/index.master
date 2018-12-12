@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+	Design by Free CSS Templates
+	http://www.freecsstemplates.org
+	Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>GenericBlue by Free CSS Templates</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<!-------------------side menu------------------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="sideMenu/menu.css">
+<!-------------------end side menu------------------------------------------------------------->
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<img src="images/crc.png" alt="" border="0" style="margin-top:8px; margin-left:0px" />
+		<h1 style="margin-top:32px"><a href="#" >Call Center</a></h1>
+		<h2 style="margin-top:30px">H N B   A s s u r a n c e   P L C</h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first"><a href="#" accesskey="1" title="">Home</a></li>
+			<li><a href="#" accesskey="2" title="">About Us</a></li>
+			<li><a href="#" accesskey="3" title="">Products</a></li>
+			<li><a href="#" accesskey="4" title="">Services</a></li>
+			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+		</ul>
+		
+	</div>
+	<div id="content">
+		<div id="tertiaryContent">
+		</div>
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+                &nbsp;</div>
+		</div>
+		<div id="secondaryContent">
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="footer">
+		<p>Copyright &copy; 2006 Sitename.com. Designed by <a href="http://www.freecsstemplates.org">Free CSS Templates</a></p>
+	</div>
+</div>
+
+<script language="JavaScript" src="sideMenu/menu.js"></script>
+<!-- items structure. menu hierarchy and links are stored there -->
+<script language="JavaScript" src="sideMenu/menu_items.js"></script>
+<!-- files with geometry and styles structures -->
+<script language="JavaScript" src="sideMenu/menu_tpl.js"></script>
+<script language="JavaScript">
+	new menu (MENU_ITEMS, MENU_TPL);
+</script>
+</body>
+</html>

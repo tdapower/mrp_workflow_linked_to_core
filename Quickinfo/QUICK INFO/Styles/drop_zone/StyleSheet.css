@@ -1,0 +1,602 @@
+﻿/*
+{
+	
+	font-family: Georgia, Times, "Times New Roman" , serif;
+	color: black;
+	width: 100%;
+	background-color: #98B3F6;
+}
+
+#header
+{
+	background-color: #1B7DCE; 
+	height: 5.35em;
+	overflow: hidden;
+}
+#SideBar
+{
+	float: left;
+	width: 160px; 
+	padding-top: 0;
+	height: 900px;
+}
+
+#Content
+{
+	padding-top: 5.35em;
+	padding-left: 160px; 
+	background-color: White;
+	overflow: hidden;
+}
+
+#Footer
+{
+	clear: both;
+	border-top: 1px solid #333;
+	height: 104px;
+}
+*/
+
+
+/*
+	Design by Free CSS Templates
+	http://www.freecsstemplates.org
+	Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Basic */
+
+*
+{
+	margin: 0em;
+	padding: 0em;
+}
+
+h1, h2
+{
+}
+
+body
+{
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	color: #000;
+	background-color: #fff;
+}
+
+a
+{
+	color: #0077dd;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+/* Outer */
+
+#outer
+{
+	padding: 0em;
+	margin: 0em;
+	width: 100%;
+}
+
+/* Header */
+
+#header
+{
+	position: relative;
+	background: #004778 url(    'images/a5.gif' ) bottom left repeat-x;
+	height: 10em;
+	padding-left: 2em;
+}
+
+#header h1
+{
+	position: absolute;
+	top: 1.8em;
+	font-size: 2.2em;
+	letter-spacing: -0.05em;
+}
+
+#header h1 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#header h2
+{
+	position: absolute;
+	font-size: 0.8em;
+	top: 8em;
+	color: #E0E8EF;
+}
+
+/* Menu */
+
+#menu
+{
+	position: absolute;
+	top: 5em;
+	right: 7em;
+}
+
+#menu ul
+{
+	list-style: none;
+}
+
+#menu li
+{
+	display: inline;
+	padding-left: 1.1em;
+	margin-left: 1em;
+	border-left: dotted 1px #E0E8EF;
+}
+
+#menu li.first
+{
+	border: 0em;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+
+#menu li a
+{
+	color: #fff;
+	padding: 0.1em;
+	text-decoration: none;
+}
+
+#menu li a:hover
+{
+	text-decoration: underline;
+}
+
+/* Content */
+
+#content
+{
+	line-height: 1.5em;
+}
+
+
+#content p
+{
+	margin-bottom: 1.5em;
+}
+
+#content h2, h3, h4, h5, h6
+{
+	color: #545454;
+	margin-bottom: 1em;
+	border-bottom: dashed 1px #dfdfdf;
+	padding-bottom: 0.3em;
+}
+
+#content h2
+{
+	font-size: 1.5em;
+}
+
+#content h3
+{
+	font-size: 1.1em;
+}
+
+#content ul
+{
+	margin-bottom: 1.5em;
+	padding-left: 1em;
+	list-style: square;
+}
+
+#content blockquote
+{
+	margin-bottom: 1.5em;
+	padding: 0.75em 0.75em 0.75em 1.5em;
+	border-left: solid 0.75em #005082;
+	background: #FDFDFD url(    'images/a7.gif' ) top left repeat-x;
+}
+
+#content blockquote p
+{
+	margin-bottom: 0em;
+}
+
+#content table
+{
+	margin-bottom: 1.5em;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#content table th
+{
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+#content table td
+{
+	padding: 0.5em;
+	border-right: solid 1px #fff;
+}
+
+#content table tr.rowH
+{
+	color: #fff;
+	background: #006192 url(    'images/a8.gif' ) top left repeat-x;
+	border-right: solid 1px #fff;
+}
+
+#content table tr.rowA
+{
+	background: #F8F8F8 url(    'images/a6.gif' ) top left repeat-x;
+	border-top: solid 1px #fff;
+	color: inherit;
+}
+
+#content table tr.rowB
+{
+	background: #FDFDFD url(    'images/a7.gif' ) top left repeat-x;
+	border-top: solid 1px #fff;
+	color: inherit;
+}
+
+/* Primary Content */
+
+#primaryContentContainer
+{
+	background-color: #fff;
+	float: right;
+	margin: 0em -19em 0em -19em;
+	width: 100%;
+}
+
+#primaryContent
+{
+	margin: 1.5em 19em 0em 17.25em;
+	padding: 1.5em 3em 1.5em 3em;
+}
+
+/* Secondary Content */
+
+#secondaryContent
+{
+	position: relative;
+	float: left;
+	width: 14em;
+	padding: 3em 2em 1.5em 2em;
+	background: #fff url(    'images/a1.gif' ) top right repeat-y;
+}
+
+#secondaryContent .xbg
+{
+	position: absolute;
+	right: 0em;
+	bottom: -64px;
+	background: #fff url(    'images/a3.gif' ) top right no-repeat;
+	height: 64px;
+	width: 128px;
+}
+
+/* Tertiary Content */
+
+#tertiaryContent
+{
+	position: relative;
+	float: right;
+	width: 15em;
+	padding: 3em 2em 1.5em 2em;
+	background: #fff url(    'images/a2.gif' ) top left repeat-y;
+}
+
+#tertiaryContent .xbg
+{
+	position: absolute;
+	left: 0em;
+	bottom: -64px;
+	background: #fff url(    'images/a4.gif' ) top left no-repeat;
+	height: 64px;
+	width: 128px;
+}
+
+/* Footer */
+
+#footer
+{
+	position: relative;
+	z-index: 1;
+	border-top: dashed 1px #dfdfdf;
+	padding: 1em 0em 2em 0em;
+	margin: 1em 2em 0em 2em;
+	text-align: center;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.button
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px 20px;
+	background: -moz-linear-gradient( top, #ffffff 0%, #83adda 23%, #275da8 52%, #146bbd 65%, #11c2ea);
+	background: -ms-linear-gradient( top, #ffffff 0%, #83adda 23%, #275da8 52%, #146bbd 65%, #11c2ea);
+	background: -webkit-gradient( linear, left top, left bottom, from(#ffffff), color-stop(0.23, #83adda), color-stop(0.52, #275da8), color-stop(0.65, #146bbd), to(#11c2ea));
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #2e54ee;
+	-moz-box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	-ms-box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	-webkit-box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	text-shadow: 0px -1px 3px rgba(150,133,128,0.8), 0px 1px 16px rgba(000,029,084,1);
+}
+
+
+.button:hover
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px 20px;
+	background: -moz-linear-gradient( top, #ffffff 0%, #83adda 23%, #275da8 52%, #146bbd 65%, #11c2ea);
+	background: -ms-linear-gradient( top, #ffffff 0%, #83adda 23%, #275da8 52%, #146bbd 65%, #11c2ea);
+	background: -webkit-gradient( linear, left top, left bottom, from(#ffffff), color-stop(0.23, #83adda), color-stop(0.52, #275da8), color-stop(0.65, #146bbd), to(#11c2ea));
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #ffffff;
+	-moz-box-shadow: 0px 2px 3px rgba(255,255,255,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	-ms-box-shadow: 0px 2px 3px rgba(255,255,255,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	-webkit-box-shadow: 0px 2px 3px rgba(255,255,255,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	box-shadow: 0px 2px 3px rgba(255,255,255,0.5), inset 0px 0px 5px rgba(105,149,232,0.6);
+	text-shadow: 0px -1px 3px rgba(150,133,128,0.8), 0px 1px 16px rgba(000,029,084,1);
+}
+
+
+.button[disabled="disabled"]
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px 20px;
+	background: -moz-linear-gradient( top, #ffffff 0%, #d1d1d1 23%, #949494 52%, #757575 65%, #757575);
+	background: -ms-linear-gradient( top, #ffffff 0%, #d1d1d1 23%, #949494 52%, #757575 65%, #757575);
+	background: -webkit-gradient( linear, left top, left bottom, from(#ffffff), color-stop(0.23, #d1d1d1), color-stop(0.52, #949494), color-stop(0.65, #757575), to(#757575));
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #000000;
+	-moz-box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(237,237,237,0.6);
+	-ms-box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(237,237,237,0.6);
+	-webkit-box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(237,237,237,0.6);
+	box-shadow: 0px 2px 3px rgba(005,001,005,0.5), inset 0px 0px 5px rgba(237,237,237,0.6);
+	text-shadow: 0px -1px 3px rgba(150,133,128,0.8), 0px 1px 16px rgba(87,87,87,1);
+}
+
+input:enabled[type=text]
+{
+	background: #FFFFFF;
+}
+textarea:enabled
+{
+	background: #FFFFFF;
+}
+.dropDown:enabled
+{
+	background: #FFFFFF;
+}
+/* Textboxes
+input[type=text]
+{
+	background: white;
+	border: 1px double #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333;
+	color: #666;
+	float: left;
+	padding: 0px 2px;
+	outline: none;
+	height: 16px;
+	font-family: Verdana;
+	font-size: 9pt;
+}
+
+input[type=text][disabled="disabled"]
+{
+	background: #E3E3E3;
+	border: 1px double #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333;
+	color: #666;
+	float: left;
+	padding: 0px 2px;
+	outline: none;
+	height: 16px;
+	font-family: Verdana;
+	font-size: 9pt;
+}
+*/
+
+
+/* dropDown
+.dropDown
+{
+	background: white;
+	border: 1px double #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333;
+	color: #666;
+	float: left;
+	padding: 0px 2px;
+	outline: none;
+	font-family: Verdana;
+	font-size: 9pt;
+}
+
+.dropDown[disabled="disabled"]
+{
+	background: #E3E3E3;
+	border: 1px double #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333;
+	color: #666;
+	float: left;
+	padding: 0px 2px;
+	outline: none;
+	font-family: Verdana;
+	font-size: 9pt;
+}*/
+
+.modalPopup
+{
+background-color:#ffffdd;
+border-width:3px;
+border-style:solid;
+border-color:Gray;
+padding:3px;
+width:250px;
+}
+
+.right
+{
+    text-align: right;
+    cursor: text;
+}
+
+
+/* For Calendar Control */
+/* ==========================================================*/
+.MyCalendar .ajax__calendar_container 
+{
+    border:1px solid #646464;
+    background-color: #EDF5FA;
+    color: blue;
+    position: absolute;
+    z-index:500;
+	   
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year 
+{
+    color: black;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year 
+{
+    color: black;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year 
+{
+    color: black;
+    font-weight:bold;
+}
+
+
+/* End Calendar Control */
+/*==========================================================================*/
+
+ /*---------- bubble tooltip -----------*/
+a.tt{
+    position:relative;
+    z-index:24;
+    color:#3CA3FF;
+	font-weight:bold;
+    text-decoration:none; 
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{ z-index:25; color: #aaaaff; background:;}
+a.tt:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+	color: #993300;
+    text-align: center;
+	filter: alpha(opacity:90);
+	KHTMLOpacity: 0.90;
+	MozOpacity: 0.90;
+	opacity: 0.90;margin-left:-33px; margin-top:-8px;
+}
+a.tt:hover span.top{
+	display: block;
+	padding: 30px 8px 0;
+    background: url(../images/bubble.gif) no-repeat top;
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px; 
+	background: url(../images/bubble_filler.gif) repeat bottom; 
+}
+a.tt:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+	color: #548912;
+    background: url(../images/bubble.gif) no-repeat bottom;
+}
+ 
+ 
+ 
+ /*---------- bubble tooltip2 -----------*/
+a.tt2{
+    position: absolute;
+    z-index:30;
+    color:#3CA3FF;
+	font-weight:bold;
+    text-decoration:none; 
+}
+a.tt2 span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt2:hover{ z-index:35; color: #aaaaff;  position:absolute;}
+a.tt2:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+	color: #993300;
+    text-align: center;
+	filter: alpha(opacity:90);
+	KHTMLOpacity: 0.90;
+	MozOpacity: 0.90;
+	opacity: 0.90;margin-left:-33px; margin-top:-8px;
+}
+a.tt2:hover span.top{
+	display: block;
+	padding: 30px 8px 0;
+    background: url(../images/bubble.gif) no-repeat top;
+}
+a.tt2:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px; 
+	background: url(../images/bubble_filler.gif) repeat bottom; 
+}
+a.tt2:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+	color: #548912;
+    background: url(../images/bubble.gif) no-repeat bottom;
+}
+ 
+/*----------------------------------------------*/
